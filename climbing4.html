@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>대구타다끼대학교</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                margin:0;
+            }
+        /* main */
+            a {
+                color:black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #top {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                border-bottom: 1.5px solid gray;
+                background-color: #f1f1f1
+            }
+                #top h3 {
+                    margin: 0;
+                    padding: 10px 20px 10px 20px;
+                    align-items: center;
+                }
+            #nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display:grid;
+                grid-template-columns: repeat(4,200px);
+                align-items: center;
+            }
+            li {
+                text-align: center;
+                padding: 10px 20px 10px 20px;
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        /* top */
+            h1 {
+                font-size: 20px;
+                text-align: center;
+                border-bottom:1.5px solid gray;
+                padding:15px;
+                margin:0px;
+                }
+            h4 {
+                margin:0px;
+                padding-bottom:10px;
+                text-align: right;
+            }
+            #contents {
+                padding:60px 100px 50px 100px;
+            }
+        /* contents */
+            table, td, th, .t {
+                height: 40px;
+                border-spacing: 5px;
+                border-collapse : separate;
+                font-size: 16pt;
+            }
+            .t:not(.pro) {
+                border : none;
+            }
+            table {
+                width: 979px;
+            }
+            thead th {
+                border:1px solid rgba(0, 0, 0, 0.3);
+                font-weight: normal;
+            }
+            tbody .t {
+                font-weight: normal;
+            }
+            tbody td {
+                background-color: #f2f2f2;
+                padding-left: 15px;
+            }
+            .c1 {
+                width: 120px;
+            }
+        /* table */
+            footer {
+                    padding: 30px;
+                    border-top:1px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            <h3>클라이밍의 이해</h3>
+            <ul id="nav">
+                <li><a href="index.html">김산양은 누구인가</a></li>
+                    <li><a href="climbing2.html">클라이밍이란</a></li>
+                    <li><a href="climbing3.html">클라이밍의 장점과 단점</a></li>
+                    <li><a href="climbing4.html">클라이밍 난이도</a></li>
+            </ul>
+        </div>
+        <h1 href="클라이밍의 이해.html">< 클라이밍의 난이도 ></h1>
+        <div id="contents">
+            <h4 style="color:blue">* 아래 난이도는 실제 전세계 클라이밍 센터의 공식 명칭입니다.</h4>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th class="c1">명칭</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="t" style="background-color: #FF7474; color:#ffffff">아메바</th>
+                        <td>아메바도 하루 주면 이분법으로 증식하면서 완등하는 정도</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #FFF35D; color:#000000">입문</th>
+                        <td>유치원생 어린이가 재미있게 탈 수 있는 레벨</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #62E88B; color:#000000">초보자</th>
+                        <td>유치원생 어린이가 재미있게 탈 수 있는 레벨</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #7EA5FC; color:#ffffff">즐겜러</th>
+                        <td>어느정도 탈 줄 아는 정도. 여기 까지 왔다면 이제 탈출구는 없다.</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #A752DD; color:#ffffff">중수</th>
+                        <td>운동신경이 좋으며, 클라이밍의 매력에 빠지기 시작한 사람</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #B27D5D; color:#ffffff">현지인</th>
+                        <td>꽤 탈줄 아는 정도. 가장 많은 사람들이 도전하는 난이도</td>
+                    </tr>
+                    <tr>
+                        <th class="t pro" style="background-color: #ffffff; color:#000000">프로</th>
+                        <td>완등한다면 사람들의 감탄 소리가 조금씩 들리는 정도</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #C4C4C4; color:#ffffff">신</th>
+                        <td>힘, 균형감각, 민첩성, 코어, 악력, 발 컨트롤 모두 마스터하면 완등</td>
+                    </tr>
+                    <tr>
+                        <th class="t" style="background-color: #393939; color:#ffffff">산양</th>
+                        <td>사람이 타라고 만들어 놓은게 아님.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <footer style="color :gray">
+        <p>대구타다끼대학교</p><br>053-119-8282
+    </footer>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>대구타다끼대학교</title>
+        <meta charset="utf-8">
+        <style>
+            a {
+                color:black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            body {
+                margin:0;
+            }
+            footer {
+                padding: 30px;
+                border-top:1px solid gray;
+            }
+            h1 {
+                font-size: 30px;
+                text-align: center;
+                border-bottom:2px solid gray;
+                padding:30px;
+                margin:0px;
+            }
+            #grid {
+                display: grid;
+                grid-template-rows: 50px 1fr; /* 큰 세로 그리드 50px */
+            }
+            #top {
+                display: grid;
+                grid-template-columns: 250px 1fr;
+                height: 50px;
+                border-bottom: 2px solid gray;  /* 상단 가로 그리드 50px */
+            }
+            #top h3 {
+                display:inline;
+                text-align: center;
+                border-right: 2px solid gray;
+                margin:0px;
+                line-height: 50px;
+                background-color:rgba(0, 0, 0, 0.1);
+                height: 50px; /* 강의목차 텍스트 */
+            }
+            #olgrid {
+                list-style:none;
+                display: grid;
+                text-align: center;
+                grid-template-columns:repeat(4, 1fr);
+                margin:0px;
+                padding: 0px;
+                height: 50px;  /* 강의목차 우측 그리드 50px */
+            }
+            #top li {
+                float: left;
+                margin:0;
+                padding:15px;
+                border-right: 2px solid rgba(0, 0, 0, 0.1);
+            }
+            #top li:not(.line) {
+                border-right: none;
+            }
+            /* 아래부터 mid 그리드 */
+            #mid {
+                padding: 40px 40px 0px 40px;
+                border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+            }
+            #mid2 {
+                padding: 40px 40px 0px 40px;
+            }
+            h2 {
+                margin: 0px 0px 40px 0px;
+            }
+            #mid h3 {
+                margin: 0px 0px 30px 0px;
+            }
+            ul {
+                padding:0;
+            }
+            /* 아래부터 list 그리드 - 장점 */
+            #list1, #list2, #list3 {
+                display: grid;
+                grid-template-columns: 80px 1fr 80px 1fr;
+                margin:40px 20px 40px 20px;
+                line-height: 24px;
+                place-items: center;
+            }
+            #mid .litext li {
+                font-weight: bold;
+            }
+            /* 아래부터 list 그리드 - 단점 */
+            #list4 {
+                display: grid;
+                grid-template-columns: 80px 273px 80px 273px 80px 273px;
+                margin:40px 20px 40px 20px;
+                place-items: center;
+                line-height: 24px;
+            }
+            .litext {
+                padding: 0px 40px 0px 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 href="클라이밍의 이해.html">클라이밍의 이해</h1>
+        <div id="grid">
+            <div id="top">
+                <h3>강의목차</h3>
+                <ol id="olgrid">
+                    <li class="line"><a href="index.html">김산양은 누구인가</a></li>
+                    <li class="line"><a href="climbing2.html">클라이밍이란</a></li>
+                    <li class="line"><a href="climbing3.html">클라이밍의 장점과 단점</a></li>
+                    <li><a href="climbing4.html">클라이밍 난이도</a></li>
+                </ol>
+            </div> <!--top div-->
+            <div id="mid">
+                <h2>클라이밍의 장점과 단점</h2>
+                <h3>장점</h3>
+                <ul>
+                    <div id="list1">
+                        <div>
+                            <img src="img/icon4.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>재미있다!</li>
+                            <p>러닝 및 헬스와 같은 운동과 비교해 활동적으로 몸을 사용하며, 문제를 풀어가는 과정에서 높은 성취감과 재미를 얻을 수 있습니다.</p>
+                        </div>
+                        <div>
+                            <img src="img/icon8.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>어렵지 않다!</li>
+                            <p>클라이밍을 즐기기위해 배워야 할것이 타 운동에 비해 현저히 적습니다. 4살 애기도 할만큼 누구나 쉽게 시작할 수 있습니다.</p>
+                        </div>
+                    </div> <!--1번째 줄-->
+                    <div id="list2">
+                        <div>
+                            <img src="img/icon5.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>힘이 쎄진다!</li>
+                            <p>’힘’을 효율적으로 ‘잘’ 쓸수 있게 됩니다. 일상생활에서 적은 힘으로 더 큰 힘을 사용할 수 있습니다.</p>
+                        </div>
+                        <div>
+                            <img src="img/icon2.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>전신운동</li>
+                            <p>벽에 오른 순간부터 전신을 사용하기 때문에 내, 외적으로 밸런스 있는 신체가 만들어지고 근신경을 강화할 수 있으며, 비율도 점차 좋아져가는 자신을 발견할 수 있습니다</p>
+                        </div>
+                    </div> <!--2번째 줄-->
+                    <div id="list3">
+                        <div>
+                            <img src="img/icon6.png" width="80px" style="padding-bottom: 20px;">
+                        </div>
+                        <div class="litext">
+                            <li>손목 강화</li>
+                            <p>손 뿐만아니라 손목의 신경과 근력이 강해지며, 장기적으로 다양한 손목 질병을 예방할 수 있습니다.</p>
+                        </div>
+                        <div></div> <!--blank div-->
+                        <div></div> <!--blank div-->
+                    </div> <!--3번째 줄-->
+                </ul>
+            </div> <!--mid div-->
+            <div id="mid2">
+                <h3>단점</h3>
+                <ul>
+                    <div id="list4">
+                        <div style="padding-bottom: 0px;">
+                            <img src="img/icon3.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>손가락, 손바닥과 작별의 시간을 가질 수 있다.</li>
+                        </div>
+                        <div>
+                            <img src="img/icon7.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>손톱과 작별의 시간을 가질 수 있다.</li>
+                        </div>
+                        <div>
+                            <img src="img/icon1.png" width="80px">
+                        </div>
+                        <div class="litext">
+                            <li>조심히 타지 않으면 신체와 작별의 시간을 가질 수 있다.</li>
+                        </div>
+                    </div>
+                </ul>
+            </div> <!--mid2 div-->
+        </div> <!--grid div-->
+    </body>
+    <footer style="color :gray">
+        <p>대구타다끼대학교</p><br>053-119-8282
+    </footer>
+</html>
